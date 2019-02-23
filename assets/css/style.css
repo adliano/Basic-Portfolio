@@ -1,0 +1,26 @@
+/* Adriano Alves
+   Feb 23 2019
+   Homework 01 
+   Berkeley Bootcamp
+   css file to make my portofolio website cute 
+ */
+
+/********* Body *********/
+body{
+    background-image: url("../imgages/vintage-concrete.png");
+    background-color: #4aaaa5;
+}
+/********* H1 **********/
+h1{
+    color: #4aaaa5;
+}
+/********* H2 **********/
+
+h2{
+    color: #4aaaa5;
+}
+/********* H5 **********/
+
+h5{
+    color: #4aaaa5;
+}
