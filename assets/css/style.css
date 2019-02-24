@@ -167,11 +167,11 @@ hr{
 }
 
 img{
-    width: 150px;
-    height: 150px;
+    width: 20%;
+    height: 20%;
     float: left; 
-    width: 17%;
-    margin: 0 15px 0 0;
+    /* width: 17%; */
+    margin: 0 10px 0 0;
 }
 
 /* .myImage{
@@ -179,12 +179,14 @@ img{
     width: 20%; 
 } */
 
-.textNext2MyImage{
-    float: left;
-    width: 81%;
-}
+/* .textNext2MyImage{ */
+    /* float: left; */
+    /* width: 65%; */
+    /* height: 100%; */
+    /* margin: 0; */
+/* } */
 p{
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 
@@ -199,4 +201,8 @@ footer{
     overflow: hidden;
     border: 12px;
     border-top-color: #4aaaa5;
+}
+
+footerContainer{
+    
 }
