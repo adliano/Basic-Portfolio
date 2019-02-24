@@ -59,10 +59,7 @@ hr{
     margin: 0 15px 0 15px;
 }
 
-img{
-    width: 150px;
-    height: 150px;
-}
+
 
 /**************** aboutMe **************/
 .aboutMeBox{
@@ -163,18 +160,26 @@ img{
 /*********************************************************/
 /*********************************************************/
 .imageAndTextBox{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin: 15px;
 }
 
-.myImage{
-    float: left;
-    width: 20%;
+img{
+    width: 150px;
+    height: 150px;
+    float: left; 
+    width: 17%;
+    margin: 0 15px 0 0;
 }
+
+/* .myImage{
+    /* float: left;
+    width: 20%; */
+} */
 
 .textNext2MyImage{
     float: left;
-    width: 80%;
+    width: 75%;
 }
 p{
     line-height: 1.9;

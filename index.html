@@ -52,18 +52,31 @@
 
 </head>
 <body>
-    <!-- *************** H1 with my name **************** -->
-    <!-- this div will be the logo with my name and will have a background green  -->
+    <!--  
+    ******************* Header with my name and Anchors ********************* 
+    this div will be the logo with my name it will have a background green  
+    the logo will be place on left and anchors on the right 
+    background for header it white
+     -->
     <header> 
+        <!-- container for all header elements to make it with width: 960px -->
         <div class="topElements">
+            <!-- container for the h1 with name, this will have the background-color: #4aaaa5 -->
             <div class="nameLogoBox">
+                <!-- H1 with name color: white -->
                 <h1 class="nameLogo">Adriano Alves</h1>
             </div>
-      
+
+            <!-- container to hold the anchor tags (outter)-->
             <div class="anchorsBox">
+                <!-- inner container, because we will have three anchors i will use anoter container  -->
+                <!-- to make it center -->
                 <div class="anchors">
+                    <!-- anchor to open index.html (About)-->
                     <a href="index.html">About</a>
+                    <!-- anchor to open portofolio -->
                     <a href="portfolio.html">Portofolio</a>
+                    <!-- anchor to open contact -->
                     <a href="contact.html">Contact</a>
                 </div>
                 
@@ -71,16 +84,28 @@
         </div>
     </header>
  
-    <div class="centerBox"> <!-- The Big White Box -->
-        <div class="aboutMeBox"> <!-- the container for th about me text -->
+    <!-- 
+    ******************************* Main content ******************************* 
+    this is the maincontent on the certer of the page, it will have a image
+    and 2 paragraphs. backgroun-color: white and width:960px
+    -->
+    <div class="centerBox"> 
+        <!-- the container for th about me text used to make the H2 center-->
+        <div class="aboutMeBox"> 
+            <!-- H2 with the About Me text -->
             <h2 class="aboutMeText">About Me</h2>
         </div>
+        <!-- horizontal hule -->
         <hr>
-
+        <!-- container to hold the image and the first paragraph -->
         <div class="imageAndTextBox">
-            <div class="myImage">
+
+            <!-- container holding image -->
+            <!-- <div class="myImage"> -->
+                
+                <!-- my image width: 150px heith: 150px -->
                 <img src="./assets/imgages/me.jpg" alt="my picture">
-            </div>
+            <!-- </div> -->
             
             <div class="textNext2MyImage">
                 <p>
