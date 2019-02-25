@@ -11,7 +11,6 @@ a{
     padding: 10px;
 }
 
-
 /*************** html **************/
 /* used to make the footer stick */
 html {
@@ -39,35 +38,19 @@ h1 {
     color: #fff;
 }
 /********* H2 **********/
-
 h2{
     font-family: 'Georgia', Times, Times New Roman, serif;
     color: #4aaaa5;
 }
-/********* H5 **********/
 
-h4{
-    color: white;
-}
-
-h5{
-    font-family: 'Georgia', Times, Times New Roman, serif;
-    color: #4aaaa5;
-}
-
+/********** header *********/
 header{
     background-color: white;
     border-color: #cccccc;
     height: 70px;
 }
 
-/* hr{ */
-    /* margin: 0 15px 0 15px; */
-/* } */
-
-
-
-/**************** aboutMe **************/
+/******* aboutMeBox ********/
 .aboutMeBox{
     height: 75px;
     width: 270px;
@@ -75,6 +58,7 @@ header{
     left: 0;
 }
 
+/****** aboutMeText ********/
 .aboutMeText{
     margin: 0;
     position: absolute;
@@ -86,7 +70,7 @@ header{
     transform: translate(0, -50%);
 }
 
-/*************** centerBox ************/
+/******* centerBox *********/
 .centerBox{
     background-color: #fff;
     /* height: 400px; */
@@ -96,13 +80,14 @@ header{
     padding: 15px;
 }
 
-/**************** topElements **************/
+/******* topElements *******/
 .topElements{
     margin: auto;
     width: 960px;
     position: relative;
 }
 
+/******** nameLogoBox ********/
 .nameLogoBox{
     background-color: #4aaaa5;
     height: 70px;
@@ -111,6 +96,7 @@ header{
     left: 0;
 }
 
+/********** nameLogo ********/
 .nameLogo {
     text-align: center;
     position: relative;
@@ -120,6 +106,7 @@ header{
     transform: translate(-50%, -50%);
 }
 
+/********* anchorsBox ********/
 .anchorsBox{
     height: 70px;
     width: 270px;
@@ -127,6 +114,7 @@ header{
     right: 0;
 }
 
+/********* anchors *********/
 .anchors{
     margin: 0;
     text-align: center;
@@ -137,13 +125,8 @@ header{
     transform: translate(-50%, -50%);
 }
 
-/*********************************************************/
-/*********************************************************/
-/*********************************************************/
-/* .imageAndTextBox{ */
-    /* margin: 15px; */
-/* } */
-
+/************************************************************/
+/******* imgage ******/
 img{
     width: 20%;
     height: 20%;
@@ -152,10 +135,12 @@ img{
     margin: 0 10px 0 0;
 }
 
+/******** paragrath ********/
 p{
     line-height: 1.5;
 }
 
+/******** footer *********/
 footer{
     background-color: #666666;
     width: 100%;
@@ -168,6 +153,7 @@ footer{
     border-top-color: #4aaaa5;
 }
 
+/********* footerContainer ********/
 .footerContainer{
     color: white;
     position: absolute;
@@ -178,24 +164,10 @@ footer{
 }
 
 /*************************************************/
+/************** CONTACT PAGE *********************/
 /*************************************************/
-/*************************************************/
 
-input{
-    width: 100%;
-    line-height: 2;
-}
-
-textarea{
-    width: 100%;
-}
-
-/*************** Form **************/
-form{
-    background-color: white;
-    width: 100%;
-}
-
+/******** centerContainer *******/
 .centerContainer{
     background-color: white; /* used for debug */
     /* 910 + 25 padding + 25 padding = 960 */
@@ -205,7 +177,7 @@ form{
     margin-top: 25px;
     padding: 25px;
 }
-
+/******** contactLabelContainer *******/
 .contactLabelContainer{
     /* background-color: aquamarine; */
     height: 50px;
@@ -214,6 +186,7 @@ form{
     left: 0;
 }
 
+/******** conactLabel ********/
 .conactLabel{
     /* background-color: crimson; */
     position: absolute;
@@ -223,7 +196,25 @@ form{
     transform: translate(0, -50%);
 }
 
-.button {
+/*************** Form **************/
+form{
+    background-color: white;
+    width: 100%;
+}
+
+/******* input *******/
+input{
+    width: 100%;
+    line-height: 2;
+}
+
+/******** textarea *******/
+textarea{
+    width: 100%;
+}
+
+/******* button *******/
+button {
     background-color: #4aaaa5;
     border: none;
     color: white;
