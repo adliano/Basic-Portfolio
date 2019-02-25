@@ -90,7 +90,7 @@ header{
 .centerBox{
     background-color: #fff;
     /* height: 400px; */
-    width: 960px;
+    width: 930px;
     margin: auto;
     margin-top: 35px;
     padding: 15px;
@@ -198,8 +198,9 @@ form{
 
 .centerContainer{
     background-color: white; /* used for debug */
-    width: 960px;
-    height: 400px;
+    /* 910 + 25 padding + 25 padding = 960 */
+    width: 910px; 
+    /* height: 400px; */
     margin: auto;
     margin-top: 25px;
     padding: 25px;
@@ -221,3 +222,16 @@ form{
     left: 0%;
     transform: translate(0, -50%);
 }
+
+.button {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 0;
+    cursor: pointer;
+  }
