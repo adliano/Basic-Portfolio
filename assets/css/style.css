@@ -50,41 +50,55 @@ header{
     height: 70px;
 }
 
-/******* aboutMeBox ********/
-.aboutMeBox{
-    height: 75px;
-    width: 270px;
+/******* Relative Position ********/
+.relative{
     position: relative;
-    left: 0;
 }
 
-/****** aboutMeText ********/
-.aboutMeText{
-    margin: 0;
+/******** Absolute Position ********/
+.absolute{
     position: absolute;
-    top: 50%;
-    left: 0;
+}
+
+.clearFix{
+    clear: both;
+}
+
+/******* aboutMeBox ******* TODO: Remove after testes*/
+/* .aboutMeBox{ */
+    /* height: 75px; */
+    /* width: 270px; */
+    /* position: relative; */
+    /* left: 0; */
+/* } */
+
+/****** aboutMeText ********/
+/* .aboutMeText{ */
+    /* margin: 0; */
+    /* position: absolute; */
+    /* top: 50%; */
+    /* left: 0; */
     /* left: 50%; */
     /* -ms-transform: translate(-50%, -50%); */
     /* transform: translate(-50%, -50%); */
-    transform: translate(0, -50%);
-}
+    /* transform: translate(0, -50%); */
+/* } */
 
 /******* centerBox *********/
-.centerBox{
-    background-color: #fff;
+/* .centerBox{ */
+    /* background-color: #fff; */
     /* height: 400px; */
-    width: 930px;
-    margin: auto;
-    margin-top: 35px;
-    padding: 15px;
-}
+    /* width: 930px; */
+    /* margin: auto; */
+    /* margin-top: 35px; */
+    /* padding: 15px; */
+/* } */
 
 /******* topElements *******/
 .topElements{
     margin: auto;
     width: 960px;
-    position: relative;
+    /* position: relative; */
 }
 
 /******** nameLogoBox ********/
@@ -92,14 +106,14 @@ header{
     background-color: #4aaaa5;
     height: 70px;
     width: 270px;
-    position: absolute;
+    /* position: absolute; */
     left: 0;
 }
 
 /********** nameLogo ********/
 .nameLogo {
     text-align: center;
-    position: relative;
+    /* position: relative; */
     top: 50%;
     left: 50%;
     /* -ms-transform: translate(-50%, -50%); */
@@ -110,7 +124,7 @@ header{
 .anchorsBox{
     height: 70px;
     width: 270px;
-    position: absolute;
+    /* position: absolute; */
     right: 0;
 }
 
@@ -118,7 +132,7 @@ header{
 .anchors{
     margin: 0;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
@@ -137,7 +151,7 @@ img{
 
 /******** paragrath ********/
 p{
-    line-height: 1.5;
+    line-height: 1.25;
 }
 
 /******** footer *********/
@@ -145,7 +159,7 @@ footer{
     background-color: #666666;
     width: 100%;
     height: 35px;
-    position: absolute;
+    /* position: absolute; */
     bottom: 0;
     left: 0;
     overflow: hidden;
@@ -156,7 +170,7 @@ footer{
 /********* footerContainer ********/
 .footerContainer{
     color: white;
-    position: absolute;
+    /* position: absolute; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -177,19 +191,25 @@ footer{
     margin-top: 25px;
     padding: 25px;
 }
-/******** contactLabelContainer *******/
-.contactLabelContainer{
+/******** contactLabelContainer ******* TODO: Remove after testes */
+/* .contactLabelContainer{ */
     /* background-color: aquamarine; */
+    /* height: 50px; */
+    /* width: 270px; */
+    /* left: 0; */
+/* } */
+
+/******** contactLabelContainer *******/
+.labelContainer{
     height: 50px;
     width: 270px;
-    position: relative;
     left: 0;
 }
 
 /******** conactLabel ********/
-.conactLabel{
+.labelWrapper{
     /* background-color: crimson; */
-    position: absolute;
+    /* position: absolute; */
     margin: 0;
     top: 50%;
     left: 0%;

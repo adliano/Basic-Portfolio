@@ -60,18 +60,18 @@
      -->
     <header> 
         <!-- container for all header elements to make it with width: 960px -->
-        <div class="topElements">
+        <div class="topElements relative">
             <!-- container for the h1 with name, this will have the background-color: #4aaaa5 -->
-            <div class="nameLogoBox">
+            <div class="nameLogoBox absolute">
                 <!-- H1 with name color: white -->
-                <h1 class="nameLogo">Adriano Alves</h1>
+                <h1 class="nameLogo relative">Adriano Alves</h1>
             </div>
 
             <!-- container to hold the anchor tags (outter)-->
-            <div class="anchorsBox">
+            <div class="anchorsBox absolute">
                 <!-- inner container, because we will have three anchors i will use anoter container  -->
                 <!-- to make it center -->
-                <div class="anchors">
+                <div class="anchors relative">
                     <!-- anchor to open index.html (About)-->
                     <a href="index.html">About</a>
                     <!-- anchor to open portofolio -->
@@ -89,10 +89,10 @@
     this is the maincontent on the certer of the page, it will have a image
     and 2 paragraphs. backgroun-color: white and width:960px
     -->
-    <div class="centerBox"> 
+    <div class="centerContainer"> 
         <!-- the container for th about me text used to make the H2 center-->
-        <div class="aboutMeBox"> 
-            <div class="aboutMeText">
+        <div class="labelContainer relative"> 
+            <div class="labelWrapper absolute">
                 <!-- H2 with the About Me text -->
                 <h2 >About Me</h2>
             </div>
@@ -133,9 +133,9 @@
         
     </div > 
 
-    <footer>
+    <footer class="absolute">
 
-        <div class="footerContainer">
+        <div class="footerContainer absolute">
             <!-- <h4>copyright ©<h4> -->
                 <p>copyright ©</p>
         </div>
