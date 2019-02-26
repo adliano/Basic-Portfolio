@@ -3,19 +3,34 @@
    Homework 01 
    Berkeley Bootcamp
    css file to make my portofolio website cute 
+
+   ********* colors *******
+   Teal color (used for headings and backgrounds): #4aaaa5
+
+    Regular font color (used for paragraphs and all text besides the headings): #777777
+
+    Main header background color: #ffffff
+
+    Main header border color: #cccccc
+
+    Footer background color: #666666
+
+    Main content background color: #ffffff
+
+    Main content border color: #dddddd
+
+    ********** Dmensions ********
+    The entire content and the main section content area is 960px wide
+
+    ************************ Fonts *********************
+    For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
+    For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
  */
 
  /************** anchor ************/
 a{
     /* add space between anchors */
     padding: 10px;
-}
-
-/*************** html **************/
-/* used to make the footer stick */
-html {
-    position: relative;
-    min-height: 100%;
 }
 
 /********* Body *********/
@@ -31,6 +46,40 @@ body{
     /* background required */
     background-image: url("../imgages/vintage-concrete.png");
 }
+
+/******* button *******/
+button {
+    background-color: #4aaaa5;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 15px 0;
+    cursor: pointer;
+  }
+
+/******** footer *********/
+footer{
+    background-color: #666666;
+    width: 100%;
+    height: 35px;
+    /* position: absolute; */
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    border: 12px;
+    border-top-color: #4aaaa5;
+}
+
+/*************** Form **************/
+form{
+    background-color: white;
+    width: 100%;
+}
+
 /********* H1 **********/
 h1 {
     font-family: 'Georgia', Times, Times New Roman, serif;
@@ -50,9 +99,36 @@ header{
     height: 70px;
 }
 
-/******* Relative Position ********/
-.relative{
+/*************** html **************/
+/* used to make the footer stick */
+html {
     position: relative;
+    min-height: 100%;
+}
+
+/******* imgage ******/
+img{
+    width: 20%;
+    height: 20%;
+    float: left; 
+    /* width: 17%; */
+    margin: 0 10px 0 0;
+}
+
+/******* input *******/
+input{
+    width: 100%;
+    line-height: 2;
+}
+
+/******** paragrath ********/
+p{
+    line-height: 1.25;
+}
+
+/******** textarea *******/
+textarea{
+    width: 100%;
 }
 
 /******** Absolute Position ********/
@@ -60,45 +136,66 @@ header{
     position: absolute;
 }
 
+/********* anchors *********/
+.anchors{
+    margin: 0;
+    text-align: center;
+    /* position: relative; */
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+/********* anchorsBox ********/
+.anchorsBox{
+    height: 70px;
+    width: 270px;
+    /* position: absolute; */
+    right: 0;
+}
+
+/******** centerContainer *******/
+.centerContainer{
+    background-color: white; /* used for debug */
+    /* 910 + 25 padding + 25 padding = 960 */
+    width: 910px; 
+    /* height: 400px; */
+    margin: auto;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+/********** clearFix ***********/
 .clearFix{
     clear: both;
 }
 
-/******* aboutMeBox ******* TODO: Remove after testes*/
-/* .aboutMeBox{ */
-    /* height: 75px; */
-    /* width: 270px; */
-    /* position: relative; */
-    /* left: 0; */
-/* } */
-
-/****** aboutMeText ********/
-/* .aboutMeText{ */
-    /* margin: 0; */
+/********* footerContainer ********/
+.footerContainer{
+    color: white;
     /* position: absolute; */
-    /* top: 50%; */
-    /* left: 0; */
-    /* left: 50%; */
-    /* -ms-transform: translate(-50%, -50%); */
-    /* transform: translate(-50%, -50%); */
-    /* transform: translate(0, -50%); */
-/* } */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 
-/******* centerBox *********/
-/* .centerBox{ */
-    /* background-color: #fff; */
-    /* height: 400px; */
-    /* width: 930px; */
-    /* margin: auto; */
-    /* margin-top: 35px; */
-    /* padding: 15px; */
-/* } */
+}
 
-/******* topElements *******/
-.topElements{
-    margin: auto;
-    width: 960px;
-    /* position: relative; */
+/******** contactLabelContainer *******/
+.labelContainer{
+    height: 50px;
+    width: 270px;
+    left: 0;
+}
+
+/******** conactLabel ********/
+.labelWrapper{
+    /* background-color: crimson; */
+    /* position: absolute; */
+    margin: 0;
+    top: 50%;
+    left: 0%;
+    transform: translate(0, -50%);
 }
 
 /******** nameLogoBox ********/
@@ -120,129 +217,20 @@ header{
     transform: translate(-50%, -50%);
 }
 
-/********* anchorsBox ********/
-.anchorsBox{
-    height: 70px;
-    width: 270px;
-    /* position: absolute; */
-    right: 0;
+/******* Relative Position ********/
+.relative{
+    position: relative;
 }
 
-/********* anchors *********/
-.anchors{
-    margin: 0;
-    text-align: center;
-    /* position: relative; */
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-}
-
-/************************************************************/
-/******* imgage ******/
-img{
-    width: 20%;
-    height: 20%;
-    float: left; 
-    /* width: 17%; */
-    margin: 0 10px 0 0;
-}
-
-/******** paragrath ********/
-p{
-    line-height: 1.25;
-}
-
-/******** footer *********/
-footer{
-    background-color: #666666;
-    width: 100%;
-    height: 35px;
-    /* position: absolute; */
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    border: 12px;
-    border-top-color: #4aaaa5;
-}
-
-/********* footerContainer ********/
-.footerContainer{
-    color: white;
-    /* position: absolute; */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-}
-
-/*************************************************/
-/************** CONTACT PAGE *********************/
-/*************************************************/
-
-/******** centerContainer *******/
-.centerContainer{
-    background-color: white; /* used for debug */
-    /* 910 + 25 padding + 25 padding = 960 */
-    width: 910px; 
-    /* height: 400px; */
+/******* topElements *******/
+.topElements{
     margin: auto;
-    margin-top: 25px;
-    padding: 25px;
-}
-/******** contactLabelContainer ******* TODO: Remove after testes */
-/* .contactLabelContainer{ */
-    /* background-color: aquamarine; */
-    /* height: 50px; */
-    /* width: 270px; */
-    /* left: 0; */
-/* } */
-
-/******** contactLabelContainer *******/
-.labelContainer{
-    height: 50px;
-    width: 270px;
-    left: 0;
+    width: 960px;
+    /* position: relative; */
 }
 
-/******** conactLabel ********/
-.labelWrapper{
-    /* background-color: crimson; */
-    /* position: absolute; */
-    margin: 0;
-    top: 50%;
-    left: 0%;
-    transform: translate(0, -50%);
-}
 
-/*************** Form **************/
-form{
-    background-color: white;
-    width: 100%;
-}
 
-/******* input *******/
-input{
-    width: 100%;
-    line-height: 2;
-}
 
-/******** textarea *******/
-textarea{
-    width: 100%;
-}
 
-/******* button *******/
-button {
-    background-color: #4aaaa5;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 15px 0;
-    cursor: pointer;
-  }
+
