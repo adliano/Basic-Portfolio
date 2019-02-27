@@ -110,7 +110,7 @@ html {
 
 /******* imgage ******/
 img{
-    background-color: aqua;
+    /* background-color: aqua; */
     width: 20%;
     height: 20%;
     float: left; 
@@ -170,6 +170,20 @@ textarea{
     position: relative;
 }
 
+
+/* *************************************************** */
+.column {
+    float: left;
+    width: 30%;
+    padding: 25px;
+}
+
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+/* ************************************************* */
 .imagePortofolio{
     width: 320px;
     height: 320px;
@@ -184,6 +198,7 @@ textarea{
     width: 320px;
     text-align: center;
     bottom: 10px;
+    padding: 0.5em 0;
 }
 
 /******** centerContainer *******/
