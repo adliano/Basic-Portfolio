@@ -64,6 +64,7 @@ button {
 
 
 /******** footer *********/
+/* a stiker footer */
 footer{
     background-color: #666666;
     width: 100%;
@@ -134,9 +135,9 @@ textarea{
     width: 100%;
 }
 
-/************************************************************/
-/************************************************************/
-
+/***********************************************************/
+/* * * * * * * * * * * * Classes * * * * * * * * * * * * * */
+/***********************************************************/
 
 /******** Absolute Position ********/
 .absolute{
@@ -171,7 +172,9 @@ textarea{
 }
 
 
-/* *************************************************** */
+/* *********************************** */
+/* used for row and table format at 
+portofolio.html file */
 .column {
     float: left;
     width: 30%;
@@ -183,15 +186,17 @@ textarea{
     clear: both;
     display: table;
 }
-/* ************************************************* */
+
+/* ********* imagePortofolio ********** */
 .imagePortofolio{
     width: 320px;
     height: 320px;
 }
 
 /*********** boxLAbel **************/
-/* used at portofolio.htm to place the label on a picture
-    */
+/* 
+used at portofolio.htm to place the label on a picture
+*/
 .boxLabel{
     background-color: #4aaaa5;
     color: #fff;
@@ -202,6 +207,10 @@ textarea{
 }
 
 /******** centerContainer *******/
+/* 
+container that hold the prncipal contents on the oage
+required width:960px; 
+*/
 .centerContainer{
     background-color: white; 
     /* 910 + 25 padding + 25 padding = 960 */
@@ -217,12 +226,10 @@ textarea{
     clear: both;
 }
 
-
 /****************************/
 .floatLeft{
     float: left;
 }
-
 
 /********* footerContainer ********/
 .footerContainer{
@@ -280,9 +287,3 @@ textarea{
     width: 960px;
     /* position: relative; */
 }
-
-
-
-
-
-
