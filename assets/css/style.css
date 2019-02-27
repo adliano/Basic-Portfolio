@@ -61,10 +61,7 @@ button {
     cursor: pointer;
 }
 
-/****************************/
-.floatLeft{
-    float: left;
-}
+
 
 /******** footer *********/
 footer{
@@ -137,6 +134,10 @@ textarea{
     width: 100%;
 }
 
+/************************************************************/
+/************************************************************/
+
+
 /******** Absolute Position ********/
 .absolute{
     position: absolute;
@@ -157,7 +158,6 @@ textarea{
 .anchorsBox{
     height: 70px;
     width: 270px;
-    /* position: absolute; */
     right: 0;
 }
 
@@ -168,6 +168,22 @@ textarea{
     background: #fff;
     padding: 0;
     position: relative;
+}
+
+.imagePortofolio{
+    width: 320px;
+    height: 320px;
+}
+
+/*********** boxLAbel **************/
+/* used at portofolio.htm to place the label on a picture
+    */
+.boxLabel{
+    background-color: #4aaaa5;
+    color: #fff;
+    width: 320px;
+    text-align: center;
+    bottom: 10px;
 }
 
 /******** centerContainer *******/
@@ -186,6 +202,13 @@ textarea{
     clear: both;
 }
 
+
+/****************************/
+.floatLeft{
+    float: left;
+}
+
+
 /********* footerContainer ********/
 .footerContainer{
     color: white;
@@ -193,7 +216,6 @@ textarea{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
 
 /******** contactLabelContainer *******/
