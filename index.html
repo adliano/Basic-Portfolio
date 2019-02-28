@@ -46,7 +46,7 @@
             <div class="anchorsBox absolute">
                 <!-- inner container, because we will have three anchors i will use anoter container  -->
                 <!-- to make it center -->
-                <div class="anchorsWrapper relative">
+                <div class="anchorsWrapper centerVertical relative">
                     <!-- anchor to open index.html (About)-->
                     <a href="index.html">About</a>
                     <!-- anchor to open portofolio -->
@@ -64,8 +64,8 @@
     -->
     <div class="centerContainer"> 
         <!-- the container for th about me text used to make the H2 center-->
-        <div class="labelContainer relative"> 
-            <div class="labelWrapper absolute">
+        <div class="labelContainer relative"> <!-- TODO: Remove this label and test it-->
+            <div class="labelWrapper centerVertical" style="--left: 0; --x: 0;">
                 <!-- H2 with the About Me text -->
                 <h2 >About Me</h2>
             </div>
@@ -103,7 +103,7 @@
     </div > <!-- END of centerContainer -->
     <!-- ************************ Footer ********************* -->
     <footer class="absolute">
-        <div class="footerContainer absolute">
+        <div class="footerContainer centerVertical absolute">
                 <p>copyright ©</p>
         </div>
     </footer>
