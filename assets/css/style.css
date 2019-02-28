@@ -254,9 +254,6 @@ portofolio.html file */
 /* i dont remember what i used for, i will find out later lol */
 .labelWrapper{
     margin: 0;
-    /* top: 50%; */
-    /* left: 0%; */
-    /* transform: translate(0, -50%); */
 }
 
 /******** nameLogoBox ********/
@@ -273,10 +270,10 @@ portofolio.html file */
 .nameLogo {
     text-align: center;
     /* position: relative; */
-    top: 50%;
-    left: 50%;
+    /* top: 50%; */
+    /* left: 50%; */
     /* -ms-transform: translate(-50%, -50%); */
-    transform: translate(-50%, -50%);
+    /* transform: translate(-50%, -50%); */
 }
 
 /******* Relative Position ********/
