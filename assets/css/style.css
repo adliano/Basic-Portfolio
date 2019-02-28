@@ -4,6 +4,12 @@
    Berkeley Bootcamp
    css file to make my portofolio website cute 
 
+   -------------------------------------------------------------------------
+   Organized:
+   First the Element Selectors, Second the classes and by Alphabetic orther
+   -------------------------------------------------------------------------
+   
+   Requirements:
    ********* colors *******
    Teal color (used for headings and backgrounds): #4aaaa5
 
@@ -27,6 +33,11 @@
     For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
  */
 
+
+/***********************************************************/
+/* * * * * * * * * Element Selectors * * * * * * * * * * * */
+/***********************************************************/
+
  /************** anchor ************/
 a{
     /* add space between anchors */
@@ -48,6 +59,7 @@ body{
 }
 
 /******* button *******/
+/* used at contact.html */
 button {
     background-color: #4aaaa5;
     border: none;
@@ -60,8 +72,6 @@ button {
     margin: 15px 0;
     cursor: pointer;
 }
-
-
 
 /******** footer *********/
 /* a stiker footer */
@@ -78,6 +88,7 @@ footer{
 }
 
 /*************** Form **************/
+/* used on contact.html */
 form{
     background-color: white;
     width: 100%;
@@ -110,8 +121,8 @@ html {
 }
 
 /******* imgage ******/
+/* used at index.html */
 img{
-    /* background-color: aqua; */
     width: 20%;
     height: 20%;
     float: left; 
@@ -120,17 +131,20 @@ img{
 }
 
 /******* input *******/
+/* used at contact.html */
 input{
     width: 100%;
     line-height: 2;
 }
 
 /******** paragrath ********/
+/* used at index.html */
 p{
     line-height: 1.25;
 }
 
 /******** textarea *******/
+/* used at contact.html */
 textarea{
     width: 100%;
 }
