@@ -4,10 +4,10 @@
    Berkeley Bootcamp
    css file to make my portofolio website cute 
 
-   -------------------------------------------------------------------------
+   ---------------------------------------------------------------------------------
    Organized:
-   First the Element Selectors, Second the classes and by Alphabetic orther
-   -------------------------------------------------------------------------
+   First the Element Selectors, Second the Class Selectors and by Alphabetic orther
+   ---------------------------------------------------------------------------------
    
    Requirements:
    ********* colors *******
@@ -121,12 +121,12 @@ html {
 }
 
 /******* imgage ******/
-/* used at index.html */
+/* used at index.html and portofolio.html */
+/* this selector need 2 arguments --w for width and --h for height */
 img{
-    width: 20%;
-    height: 20%;
+    width: var(--w);
+    height: var(--h);
     float: left; 
-    /* width: 17%; */
     margin: 0 10px 0 0;
 }
 
@@ -150,19 +150,20 @@ textarea{
 }
 
 /***********************************************************/
-/* * * * * * * * * * * * Classes * * * * * * * * * * * * * */
+/* * * * * * * * * * * Class Selectors * * * * * * * * * * */
 /***********************************************************/
 
 /******** Absolute Position ********/
+/* used to set position to absolute */
 .absolute{
     position: absolute;
 }
 
 /********* anchors *********/
-.anchors{
+/* used to make the anchors center verticaly */
+.anchorsWrapper{
     margin: 0;
     text-align: center;
-    /* position: relative; */
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
@@ -170,6 +171,7 @@ textarea{
 }
 
 /********* anchorsBox ********/
+/* used to place the anchors to the right */
 .anchorsBox{
     height: 70px;
     width: 270px;
@@ -177,6 +179,7 @@ textarea{
 }
 
 /************* boxImage ***********/
+/* used to stack the label on top of the image at portofolio.html */
 .boxImage{
     width: 320px;
     height: 320px;
@@ -185,8 +188,7 @@ textarea{
     position: relative;
 }
 
-
-/* *********************************** */
+/* *************** column **************** */
 /* used for row and table format at 
 portofolio.html file */
 .column {
@@ -195,22 +197,8 @@ portofolio.html file */
     padding: 25px;
 }
 
-.row::after{
-    content: "";
-    clear: both;
-    display: table;
-}
-
-/* ********* imagePortofolio ********** */
-.imagePortofolio{
-    width: 320px;
-    height: 320px;
-}
-
 /*********** boxLAbel **************/
-/* 
-used at portofolio.htm to place the label on a picture
-*/
+/* used at portofolio.htm to stack the label on a picture */
 .boxLabel{
     background-color: #4aaaa5;
     color: #fff;
@@ -221,10 +209,8 @@ used at portofolio.htm to place the label on a picture
 }
 
 /******** centerContainer *******/
-/* 
-container that hold the prncipal contents on the oage
-required width:960px; 
-*/
+/* container that hold the prncipal contents on the page */
+/* required width:960px; */
 .centerContainer{
     background-color: white; 
     /* 910 + 25 padding + 25 padding = 960 */
@@ -235,36 +221,26 @@ required width:960px;
     padding: 25px;
 }
 
-/********** clearFix ***********/
-.clearFix{
-    clear: both;
-}
-
-/****************************/
-.floatLeft{
-    float: left;
-}
-
 /********* footerContainer ********/
+/* used on footer */
 .footerContainer{
     color: white;
-    /* position: absolute; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
 /******** contactLabelContainer *******/
+/* used to center the main content label vetically */
 .labelContainer{
     height: 50px;
     width: 270px;
     left: 0;
 }
 
-/******** conactLabel ********/
+/******** labelWrapper ********/
+/* i dont remember what i used for, i will find out later lol */
 .labelWrapper{
-    /* background-color: crimson; */
-    /* position: absolute; */
     margin: 0;
     top: 50%;
     left: 0%;
@@ -272,15 +248,16 @@ required width:960px;
 }
 
 /******** nameLogoBox ********/
+/* used to make the logo right justify and add background color */
 .nameLogoBox{
     background-color: #4aaaa5;
     height: 70px;
     width: 270px;
-    /* position: absolute; */
     left: 0;
 }
 
 /********** nameLogo ********/
+/* used to make the logo's text center vertically */
 .nameLogo {
     text-align: center;
     /* position: relative; */
@@ -291,13 +268,23 @@ required width:960px;
 }
 
 /******* Relative Position ********/
+/* used to set position to absolute */
 .relative{
     position: relative;
 }
 
+/************ Row ************/
+/* used to clear the float after use the column class and make the row again */
+/* this selector inserts something after the content of each selected element(s). */
+.row::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
 /******* topElements *******/
+/* used on header to give the elements the same size of main content */
 .topElements{
     margin: auto;
     width: 960px;
-    /* position: relative; */
 }
