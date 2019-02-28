@@ -33,7 +33,6 @@
     For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
  */
 
-
 /***********************************************************/
 /* * * * * * * * * Element Selectors * * * * * * * * * * * */
 /***********************************************************/
@@ -42,6 +41,12 @@
 a{
     /* add space between anchors */
     padding: 10px;
+}
+
+/********* anchor hover *********/
+/* hover efect for anchor it will add a boder around anchor */
+a:hover{
+    border: solid 1px #4aaaa5;
 }
 
 /********* Body *********/
@@ -71,6 +76,12 @@ button {
     font-size: 16px;
     margin: 15px 0;
     cursor: pointer;
+}
+
+/******* button hover **********/
+/* hover efect for button */
+button:hover{
+    background-color: lightgreen;
 }
 
 /******** footer *********/
@@ -129,6 +140,12 @@ img{
     margin: 0 10px 0 0;
 }
 
+/******* imgage hover ******/
+/* hover efect around image used at portofolio */
+img:hover{
+    border: solid 1px #4aaaa5;
+}
+
 /******* input *******/
 /* used at contact.html */
 input{
@@ -181,15 +198,7 @@ textarea{
     background: #fff;
     padding: 0;
     position: relative;
-}
-
-/* *************** column **************** */
-/* used for row and table format at 
-portofolio.html file */
-.column {
-    float: left;
-    width: 30%;
-    padding: 25px;
+    margin: 0 5em 0 0;
 }
 
 /*********** boxLAbel **************/
@@ -199,7 +208,7 @@ portofolio.html file */
     color: #fff;
     width: 320px;
     text-align: center;
-    bottom: 10px;
+    bottom: 10%;
     padding: 0.5em 0;
 }
 
@@ -236,6 +245,15 @@ portofolio.html file */
     transform: translate(var(--x), var(--y));
 }
 
+/* *************** column **************** */
+/* used for row and table format at 
+portofolio.html file */
+.column {
+    float: left;
+    width: 30%;
+    padding: 25px;
+}
+
 /********* footerContainer ********/
 /* used on footer */
 .footerContainer{
@@ -269,11 +287,6 @@ portofolio.html file */
 /* used to make the logo's text center vertically */
 .nameLogo {
     text-align: center;
-    /* position: relative; */
-    /* top: 50%; */
-    /* left: 50%; */
-    /* -ms-transform: translate(-50%, -50%); */
-    /* transform: translate(-50%, -50%); */
 }
 
 /******* Relative Position ********/
