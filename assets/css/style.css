@@ -130,22 +130,6 @@ html {
     min-height: 100%;
 }
 
-/******* imgage ******/
-/* used at index.html and portofolio.html */
-/* this selector need 2 arguments --w for width and --h for height */
-img{
-    width: var(--w);
-    height: var(--h);
-    float: left; 
-    margin: 0 10px 0 0;
-}
-
-/******* imgage hover ******/
-/* hover efect around image used at portofolio */
-img:hover{
-    border: solid 1px #4aaaa5;
-}
-
 /******* input *******/
 /* used at contact.html */
 input{
@@ -193,8 +177,8 @@ textarea{
 /************* boxImage ***********/
 /* used to stack the label on top of the image at portofolio.html */
 .boxImage{
-    width: 320px;
-    height: 320px;
+    width: 300px;
+    height: 300px;
     background: #fff;
     padding: 0;
     position: relative;
@@ -206,7 +190,7 @@ textarea{
 .boxLabel{
     background-color: #4aaaa5;
     color: #fff;
-    width: 320px;
+    width: 300px;
     text-align: center;
     bottom: 10%;
     padding: 0.5em 0;
@@ -228,21 +212,20 @@ textarea{
 
 /************** centerVertical ***************/
 /* used to center content vertially */
-/* it will have a option to pass an argument for top and left */
-/* if no argument passed the default will be: */
-/* top:50%; left:50%; x: -50% and y: -50% */
 .centerVertical{
-    /* default value for --top */
-    --top: 50%;
-    /* default value for --left */
-    --left: 50%;
-    /* default value for --x */
-    --x: -50%;
-    /* default value for --y */
-    --y: -50%;
-    top: var(--top);
-    left: var(--left);
-    transform: translate(var(--x), var(--y));
+    top: 50%;
+    left: 50%;
+    /* translate x = 50% and y = -50% */
+    transform: translate(-50%, -50%);
+}
+
+/*************** center-container-label ************/
+/* used as container for the label at each page */
+.center-container-label{
+    top: 50%;
+    left: 0;
+    /* translate x = 0 and y = -50% */
+    transform: translate(0, -50%);
 }
 
 /* *************** column **************** */
@@ -258,6 +241,15 @@ portofolio.html file */
 /* used on footer */
 .footerContainer{
     color: white;
+}
+
+/******* about-img ******/
+/* used at index.html holding my image */
+.about-img{
+    width: 20%;
+    height: 20%;
+    float: left; 
+    margin: 0 10px 0 0;
 }
 
 /******** contactLabelContainer *******/
@@ -289,6 +281,21 @@ portofolio.html file */
     text-align: center;
 }
 
+/******* portofolio-img ******/
+/* used at portofolio.html */
+.portofolio-img{
+    width: 300px;
+    height: 300px;
+    float: left; 
+    margin: 0 10px 0 0;
+}
+
+/******* portofolio-img hover ******/
+/* hover efect around image used at portofolio */
+.portofolio-img:hover{
+    border: solid 1px #4aaaa5;
+}
+
 /******* Relative Position ********/
 /* used to set position to absolute */
 .relative{
@@ -310,3 +317,27 @@ portofolio.html file */
     margin: auto;
     width: 960px;
 }
+
+
+/* NOTES */
+
+/************** centerVertical ***************/
+/* NOT good practice but i will leave this code saved here */
+/* in case i need one day */
+/* used to center content vertially */
+/* it will have a option to pass an argument for top and left */
+/* if no argument passed the default will be: */
+/* top:50%; left:50%; x: -50% and y: -50% */
+/* .centerVertical{ */
+    /* default value for --top */
+    /* --top: 50%; */
+    /* default value for --left */
+    /* --left: 50%; */
+    /* default value for --x */
+    /* --x: -50%; */
+    /* default value for --y */
+    /* --y: -50%; */
+    /* top: var(--top); */
+    /* left: var(--left); */
+    /* transform: translate(var(--x), var(--y)); */
+/* } */
